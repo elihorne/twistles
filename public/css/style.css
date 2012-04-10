@@ -1,0 +1,288 @@
+/* World's laziest reset */
+*{margin:0;padding:0;border:0;}
+
+body, html{
+width:100%;
+height:100%;
+display:block;
+overflow:hidden;
+}
+
+.wrap{
+padding:25px;
+}
+
+body{
+font-family:'helvetica',arial,sans-serif;
+background-color:#f0f0f0;
+}
+
+.wrap .brand{
+display:block;
+margin-bottom:21px;
+color:#333;
+font-size:20px;
+}
+
+.brand{
+background:url(../images/brand.png) left top no-repeat;
+width:126px;
+height:28px;
+margin:50px auto 0;
+text-indent:-9999em;
+overflow:hidden;
+}
+
+#listen{
+display:none;
+width:100%;
+height:100%;
+background:-webkit-gradient(radial, center center,
+ 5, center center, 250, from(rgba(255,255,255,0.1)), to(rgba(10,10,10,0.1)));
+position:fixed;
+left:0;
+top:0;
+}
+
+#listen .box{
+width:200px;
+height:100px;
+position:fixed;
+top:30%;
+left:50%;
+margin-top:-100px;
+margin-left:-100px;
+background-color:rgba(0,0,0,0.25);
+-webkit-border-radius:4px;
+text-align:center;
+padding-top:90px;
+-webkit-box-shadow:0 0 2px rgba(0,0,0,0.5);
+}
+
+#listen .box .srsly{
+color:#ccc;
+letter-spacing:5px;
+font-size:16px;
+text-transform: uppercase;
+text-shadow:0 1px 1px rgba(0,0,0,0.25);
+}
+
+#twistle-submit{
+text-align:center;
+margin: 0 auto;
+}
+
+#tweet-single{
+width:325px;
+margin:50px auto;
+font-size:12px;
+color:#333;
+}
+
+#tweet-single a{
+color:#111;
+}
+
+#tweet-single a:hover{
+text-decoration:none;
+}
+
+#tweet-single .meta{
+clear:both;
+margin-top:15px;
+background:url(../images/twistle-bird.png) left top no-repeat;
+padding-left:20px;
+}
+
+#tweet-single .meta .author{
+font-weight:bold;
+}
+
+#tweets{
+overflow:hidden;
+max-width:400px;
+margin: 100px auto 0;
+}
+
+#tweets ul{
+text-align:center;
+}
+
+#tweets .overlay{
+position:absolute;
+left:0;
+top:0;
+opacity:0.9;
+width:20px;
+height:20px;
+}
+
+.overlay.type1{
+background-color:#a7c976;
+}
+.overlay.type2{
+background-color:#17120d;
+}
+.overlay.type3{
+background-color:#3e4f87;
+}
+.overlay.type4{
+background-color:#b06f9a;
+}
+.overlay.type5{
+background-color:#c24239;
+}
+.overlay.type6{
+background-color:#e57a54;
+}
+.overlay.type7{
+background-color:#9b6e44;
+}
+.overlay.type8{
+background-color:#eda43a;
+}
+.overlay.type9{
+background-color:#f7d854;
+}
+.overlay.type0{
+background-color:#71c5e0;
+}
+
+#tweets .tweet_text{
+display:none;
+}
+
+
+
+#tweets li{
+display:inline-block;
+list-style-type:none;
+width:20px;
+height:20px;
+position:relative;
+-webkit-box-shadow:inset 0 0 4px rgba(0,0,0,0.5);
+}
+
+#tweet-0, #tweet-10{
+background-color:#8ad1c1;
+}
+
+#tweet-1, #tweet-11{
+background-color:#ea227a;
+}
+
+#tweet-2, #tweet-12{
+background-color:#efebc6;
+}
+
+#tweet-3, #tweet-13{
+background-color:#d68da1;
+}
+
+#tweet-4, #tweet-14{
+background-color:#2c718e;
+}
+
+#tweet-5, #tweet-15{
+background-color:#f8bf7a;
+}
+
+#tweet-6, #tweet-16{
+background-color:#ac9ca9;
+}
+
+#tweet-7, #tweet-17{
+background-color:#3d6e59;
+}
+
+#tweet-8, #tweet-18{
+background-color:#8ab2b2;
+}
+
+#tweet-9, #tweet-19{
+background-color:#f0cbb8;
+}
+
+#tweets li:hover .overlay{;
+opacity:0;
+cursor:pointer;
+}
+
+.hitenter{
+font-size:10px;
+color:#444;
+border-top:1px solid #999;
+padding-top:5px;
+margin: 0 auto;
+display:none;
+}
+
+.instructions{
+text-align:center;
+margin-top:10px;
+}
+
+#twistle{
+font-size:80px;
+border:0;
+font-weight:bold;
+color:#333;
+background:none;
+outline:none;
+padding:15px 0 0;
+width:100%;
+text-align:center;
+margin:15px auto 0;
+font-family:'helvetica',arial,sans-serif;
+}
+
+.caveat{
+font-size:11px;
+color:#666;
+width:380px;
+line-height:15px;
+}
+
+#results-count{
+margin:70px auto 0;
+text-align:center;
+font-family:'american typewriter', 'bookman old style', serif;
+text-transform:uppercase;
+font-size:11px;
+display:none;
+color:#999;
+letter-spacing:2.5px;
+}
+
+#results-count em{
+font-style:normal;
+}
+
+#results-count strong{
+font-weight:normal;
+}
+
+#msg{
+	position:absolute;
+	left:15px;
+	top:15px;
+	border-radius:8px;
+	background:rgba(0,0,0,0.75);
+	color:#fff;
+	padding:5px 15px;
+	display:none;
+	font-size:11px;
+	min-width:200px;
+	max-height:300px;
+	overflow:hidden;
+}
+
+#msg li{
+	list-style-type:none;
+	border-top:1px solid rgba(255,255,255,0.25);
+	padding:10px 0;
+}
+
+#msg li:first-child{
+	border-top:0;
+}

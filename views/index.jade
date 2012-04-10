@@ -1,0 +1,70 @@
+#msg
+	ul
+
+#listen
+	.box
+		span.srsly Listen
+		
+.wrap
+	a.brand Twistles
+	form#twistle-submit
+		input#twistle(type="text", name="twistle", autocomplete="off")
+		
+	.instructions
+		span.hitenter Hit enter to search
+		
+#tweet-single
+	p.tweet-text
+	.meta
+		a.author
+		span.time
+
+#tweets
+	ul
+
+#audiocontainer
+
+audio(preload="auto", id="caucauphony")
+	source(src="/sound/compressed/tons_sm.mp3", type="audio/mpeg")
+
+audio(preload="auto", id="chirp-0", class="chirper")
+	source(src="/sound/compressed/0.mp3", type="audio/mpeg")
+
+audio(preload="auto", id="chirp-1", class="chirper")
+	source(src="/sound/compressed/1.mp3", type="audio/mpeg")
+	
+audio(preload="auto", id="chirp-2", class="chirper")
+	source(src="/sound/compressed/2.mp3", type="audio/mpeg")
+
+audio(preload="auto", id="chirp-3", class="chirper")
+	source(src="/sound/compressed/3.mp3", type="audio/mpeg")
+
+audio(preload="auto", id="chirp-4", class="chirper")
+	source(src="/sound/compressed/4.mp3", type="audio/mpeg")
+
+audio(preload="auto", id="chirp-5", class="chirper")
+	source(src="/sound/compressed/5.mp3", type="audio/mpeg")
+
+audio(preload="auto", id="chirp-6", class="chirper")
+	source(src="/sound/compressed/6.mp3", type="audio/mpeg")
+
+audio(preload="auto", id="chirp-7", class="chirper")
+	source(src="/sound/compressed/7.mp3", type="audio/mpeg")
+
+audio(preload="auto", id="chirp-8", class="chirper")
+	source(src="/sound/compressed/8.mp3", type="audio/mpeg")
+
+audio(preload="auto", id="chirp-9", class="chirper")
+	source(src="/sound/compressed/9.mp3", type="audio/mpeg")
+	
+script(type="text/javascript")
+	twistles.init();
+	// var _gaq = _gaq || [];
+	// _gaq.push(['_setAccount', 'UA-452488-30']);
+	// _gaq.push(['_trackPageview']);
+	// (function() {
+	//	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	//	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	//	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	// })();
+
